@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silla Touchwood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <a href="#">Hem</a>
+        </div>
+        <h1>Touchwood Chair</h1>
+        <nav>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-overview">
+            <img src="Bento chair.jpg" alt="Touchwood Chair">
+            <div class="product-details">
+                <h2>Touchwood Chair</h2>
+                <p>La Touchwood Chair es una silla diseñada con simplicidad y elegancia en mente, perfecta para cualquier entorno moderno.</p>
+                <p><strong>Precio:</strong> €200.00</p>
+                
+                <!-- Selección de color -->
+                <div class="product-colors">
+                    <label for="color-select">Color:</label>
+                    <select id="color-select" onchange="redirectToColorPage(this.value)">
+                        <option value="#">Selecciona un color</option>
+                        <option value="link-color1">Negro</option>
+                        <option value="link-color2">Blanco</option>
+                        <option value="link-color3">Gris</option>
+                    </select>
+                </div>
+
+                <button class="buy-now" onclick="redirectToBuyPage()">Comprar ahora</button>
+            </div>
+        </section>
+
+        <section class="product-images">
+            <div class="small-images">
+                <img src="3 sillas.jpg" alt="Imagen pequeña 1">
+                <img src="images.jpg" alt="Imagen pequeña 2">
+            </div>
+            <div class="large-image">
+                <img src="comedor.png" alt="Imagen grande">
+            </div>
+        </section>
+
+        <section class="product-description">
+            <h3>Descripción del Producto</h3>
+            <p>La Touchwood Chair combina diseño moderno con materiales de alta calidad para ofrecer una experiencia de confort única. Disponible en varios colores, esta silla es ideal para oficinas, comedores, y otros espacios modernos.</p>
+        </section>
+
+        <section class="product-slider">
+            <h3>Galería de Imágenes</h3>
+            <div class="slider">
+                <img src="similar 1.jpg" alt="Slider Imagen 1">
+                <img src="similar 2.jpg" alt="Slider Imagen 2">
+                <img src="similar 3.jpg" alt="Slider Imagen 3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+            <h3>Contacto</h3>
+            <p>Correo electrónico: info@hem.com</p>
+            <p>Teléfono: +34 123 456 789</p>
+        </section>
+        <p>&copy; 2024 Hem. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+    
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        function redirectToBuyPage() {
+            window.location.href = "https://youtu.be/2yJgwwDcgV8?si=Kh71sT7iTQoeHcYo"; 
+        }
+    </script>
+</body>
+</html>
